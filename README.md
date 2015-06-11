@@ -40,5 +40,16 @@ Mobaxterm is currently my favorite terminal emulator for Windows and there are s
  * Start Mobaxterm and navigate to Settings -> Configuration -> Terminal
  * Check "Use Windows PATH environment" if not already done
  * Restart Mobaxterm and run vagrant or git to verify they are found.
+
+## Setup curl certs for git
+1. Start Mobaxterm and create a certs directory in your home directory.
+2. Pull down curl-ca-bundle.crt from this repository.
+```
+ $ mkdir ~/certs
+ $ cd ~/certs && wget --no-check-certificate https://github.com/johnrothermel/bosh-lite-win/blob/master/curl-ca-bundle.crt
+```
+ 
+
+ 
   
   
