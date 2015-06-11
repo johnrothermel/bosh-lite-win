@@ -43,9 +43,10 @@ Mobaxterm is currently my favorite terminal emulator for Windows and there are s
 
 ## Setup curl certs for git
 1. Save [curl-ca-bundle.crt](https://github.com/johnrothermel/bosh-lite-win/blob/master/curl-ca-bundle.crt) in your Mobaxterm home directory.
-2. Configure git to use the curl cert.
+2. Configure git to use the curl cert and clone this repository.
 ```
 $ git config --global http.sslcainfo ~/PATH/TO/curl-ca-bundle.crt
+$ git clone https://github.com/johnrothermel/bosh-lite-win.git
 ```
 
  
