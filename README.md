@@ -4,6 +4,8 @@ A local environment to deploy Cloud Foundry with BOSH on Windows.
 
 This readme documents the steps used to deply BOSH on Windows using Vagrant and Mobaxterm. The high level process is based off https://github.com/cloudfoundry/bosh-lite with some Windows specific deviations.
 
+Mobaxterm is currently my favorite terminal emulator for Windows and there are specific steps to make it work with vagrant and git.
+
 
 ## Prereqs
 * Must have processor that supports virtualization technologies like VTx and extended paging.
