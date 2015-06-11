@@ -1,2 +1,2 @@
 [http]
-    sslcainfo = "/home/mobaxterm/certs/curl-ca-bundle.crt"
+    sslcainfo = "/home/mobaxterm/curl-ca-bundle.crt"
