@@ -63,7 +63,24 @@ Mobaxterm is currently my favorite terminal emulator for Windows and there are s
     * To reconnect, go to your saved sessions in MobaXterm (accessible from the vertical tab with a star), and simply double-click on the saved session name.
     * You can run multiple instances of the session, which you can use for multitasking.
 
-
+3. Setup proxies for pulling down packages (only if required)
+ ```
+ $ export http_proxy=http://proxy.domain.com:port
+ $ export https_proxy=http://proxy.domain.com:port
+ $ export no_proxy=192.168.50.4,xip.io
+ ```
+ 
+4. Install bosh cli
+ ```
+ $ sudo -E add-apt-repository multiverse
+ $ sudo -E apt-get update
+ $ sudo -E apt-get -y install build-essential linux-headers-`uname -r`
+ $ sudo -E apt-get -y install ruby ruby-dev git zip
+ $ sudo -E apt-get -y install zlibc zlib1g zlib1g-dev libsqlite3-dev 
+ $ sudo -E gem install bosh_cli bosh_cli_plugin_micro --no-ri --no-rdoc --verbose
+ ```
+ 
+ 
  
   
   
