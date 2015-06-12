@@ -25,17 +25,10 @@ Mobaxterm is currently my favorite terminal emulator for Windows and there are s
 * Install [Virtual Box for Windows](https://www.virtualbox.org/wiki/Downloads)
 * Install [Vagrant](https://www.vagrantup.com/downloads.html)
 
-## Configure Mobaxterm for Vagrant
-1. Remove /bin/env link to /bin/busybox.exe
- * Mobaxterm uses busybox and the default setup has the alias env='/bin/busybox.exe env', links /bin/env to /bin/busybox.exe, and an env.exe binary. This confuses vagrant which calls #!/usr/bin/env
- * Start Mobaxterm
- * Make a backup of env.exe and remove the link
- ```
- $ cp /bin/env.exe /bin/env.exe.bak
- $ ls -l /bin/env*
- $ rm /bin/env
- $ ls -l /bin/env*
- ```
+## Configure Vagrant and Mobaxterm
+1. Change ```#!/usr/bin/env bash``` to ```#!/usr/bin/env.exe bash``` in ```/drives/c/HashiCorp/Vagrant/bin/vagrant```
+
+
 2. Append Windows PATH environment
  * Start Mobaxterm and navigate to Settings -> Configuration -> Terminal
  * Check "Use Windows PATH environment" if not already done
