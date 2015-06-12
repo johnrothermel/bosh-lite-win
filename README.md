@@ -98,7 +98,7 @@ Mobaxterm is currently my favorite terminal emulator for Windows and there are s
  }
  ```
  
- ## Provision CloudFoundry
+## Provision CloudFoundry
 1. Target bosh
  ```
  vagrant@vagrant-ubuntu-trusty-64:~/bosh-lite$ bosh target 192.168.50.4 lite
