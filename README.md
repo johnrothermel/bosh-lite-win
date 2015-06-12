@@ -98,6 +98,28 @@ Mobaxterm is currently my favorite terminal emulator for Windows and there are s
  }
  ```
  
+ ## Provision CloudFoundry
+1. Target bosh
+ ```
+ vagrant@vagrant-ubuntu-trusty-64:~/bosh-lite$ bosh target 192.168.50.4 lite
+ Target set to `Bosh Lite Director'
+ Your username: admin
+ Enter password: admin
+ Logged in as `admin'
+ ```
  
+2. Add route to bosh deployment host
+ ```
+ vagrant@vagrant-ubuntu-trusty-64:~/bosh-lite$ ./bin/add-route
+ Adding the following route entry to your local route table to enable direct warden container access. Your sudo password may be required.
+  - net 10.244.0.0/19 via 192.168.50.4
+  ```
   
+3. Provision CloudFoundry
+ ```
+ vagrant@vagrant-ubuntu-trusty-64:~/bosh-lite$ ./bin/provision_cf
+ ...
+
+ ```
+
   
