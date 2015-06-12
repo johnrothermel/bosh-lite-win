@@ -80,6 +80,23 @@ Mobaxterm is currently my favorite terminal emulator for Windows and there are s
  $ sudo -E gem install bosh_cli bosh_cli_plugin_micro --no-ri --no-rdoc --verbose
  ```
  
+5. Install spiff and bosh lite
+ ```
+ $ wget https://github.com/cloudfoundry-incubator/spiff/releases/download/v1.0.7/spiff_linux_amd64.zip
+ $ unzip spiff_linux_amd64.zip
+ $ sudo mv spiff /usr/local/bin/
+ 
+ $ git clone https://github.com/cloudfoundry/bosh-lite.git
+ $ git clone https://github.com/cloudfoundry/cf-release
+ $ cd bosh-lite/
+ ```
+ 
+  * Edit the ```./bin/provision_cf``` so ```get_ip_from_vagrant_ssh_config``` outputs the private network IP. Should look like:
+  ```
+  get_ip_from_vagrant_ssh_config() {
+   echo 192.168.50.4
+ }
+ ```
  
  
   
