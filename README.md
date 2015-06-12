@@ -54,11 +54,13 @@ $ vagrant status
   * boshlite (ssh port 2200)
 
 2. Login to boshlite vm. (vagrant ssh does not work in mobaxterm or cygwin)
- * In MobaXterm, click on the Session button to start a new “session.” Choose SSH. Under “Basic SSH Settings,” enter 127.0.0.1 for “Remote host”; specify the user name to be vagrant; change port to 2222. Then, click on “Bookmark settings” tab, and give this session a memorable name, such as 216-VBox. Finally, click OK to continue. If all goes well, a new SSH tab will open up, and you will prompted for password (which is vagrant).
-
-To reconnect, go to your saved sessions in MobaXterm (accessible from the vertical tab with a star), and simply double-click on the saved session name.
-
-You can run multiple instances of the session, which you can use for multitasking.
+ * In MobaXterm, click on the Session button to start a new “session.” 
+ * Choose SSH. Under “Basic SSH Settings,” enter 127.0.0.1 for “Remote host”; specify the user name to be vagrant; change port to 2200. 
+ * Then, click on “Bookmark settings” tab, and give this session a memorable name, such as vagrant-bosh. 
+ * Finally, click OK to continue. 
+  * If all goes well, a new SSH tab will open up, and you will prompted for password (which is vagrant).
+  * To reconnect, go to your saved sessions in MobaXterm (accessible from the vertical tab with a star), and simply double-click on the saved session name.
+  * You can run multiple instances of the session, which you can use for multitasking.
 
 
  
