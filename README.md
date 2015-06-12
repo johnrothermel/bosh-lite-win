@@ -53,6 +53,7 @@ Mobaxterm is currently my favorite terminal emulator for Windows and there are s
   * Should now have 2 vms running.
     * cf (ssh port 2222)
     * boshlite (ssh port 2200)
+    
 2. Login to boshlite vm. (vagrant ssh does not work in mobaxterm or cygwin)
   * In MobaXterm, click on the Session button to start a new “session.” 
   * Choose SSH. Under “Basic SSH Settings,” enter 127.0.0.1 for “Remote host”; specify the user name to be vagrant; change port to 2200. 
