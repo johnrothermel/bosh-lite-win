@@ -27,7 +27,7 @@ Mobaxterm is currently my favorite terminal emulator for Windows and there are s
 
 ## Configure Vagrant and Mobaxterm
 1. Change ```#!/usr/bin/env bash``` to ```#!/usr/bin/env.exe bash``` in ```/drives/c/HashiCorp/Vagrant/bin/vagrant```
-
+ * Without the exe extension Mobaxterm gets confused.
 
 2. Append Windows PATH environment
  * Start Mobaxterm and navigate to Settings -> Configuration -> Terminal
